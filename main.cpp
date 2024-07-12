@@ -299,8 +299,6 @@ bool IsCollision(const Segment& segment, const Plane& plane) {
 	// tを求める
 	float t = (plane.distance - Dot(segment.origin, plane.normal)) / dot;
 
-	Novice::ScreenPrintf(0, 0, "t : %f", t);
-
 	if (t >= 0.0f && t <= 1.0f) { return true; }
 	else { return false; }
 }
